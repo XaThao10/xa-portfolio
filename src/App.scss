@@ -1,0 +1,115 @@
+$primary-color: #2cd4bf;
+
+@import 'animate.css';
+@import 'loaders.css/src/animations/pacman.scss';
+
+
+input,
+textarea{
+  font-family: 'Helvetica Neue';
+}
+
+.row{
+  margin-top: 200px !important;
+
+  .col-lg{
+      padding: 10px 15px;
+      margin-bottom: 15px;
+
+
+  
+      h1{
+        font-size: 53px;
+        font-family: 'Marker Felt' !important;
+        font-weight: bolder;
+        color: #2cd4bf;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 20px;
+        left: 10px;
+        animation: fadeIn 1s 1.2s backwards;
+
+        &::before{
+        content: '<h1>';
+        font-family: Trattatello;
+        color: #ffe53f;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -40px;
+        left: 15px;
+        opacity: .4;
+        }
+
+        &::after{
+            content: '</h1>';
+            font-family: Trattatello;
+            color: #ffe53f;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 20px;
+            animation: fadeIn 1s 1.7s backwards; 
+            opacity: .4;
+        }
+    }
+    p{
+        font-size: 18px !important;
+        font-family: sans-serif !important;
+        min-width: fit-content;
+        animation: pulse 1s;
+        animation-delay: 3s;
+        margin-bottom: 20px;
+
+        &:nth-of-type(1){
+            animation-delay: 1.3s;
+        }
+        &:nth-of-type(2){
+            animation-delay: 1.4s;
+        }
+        &:nth-of-type(3){
+            animation-delay: 1.5s;
+        }
+    }
+  }
+}
+
+.loader-active{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
+
+
+/* For Tablet View */
+@media screen and (min-device-width: 820px) and (max-device-width: 1180px){
+ 
+}
+
+
+ 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+  .row{
+    margin-top: 50px !important;
+    .col-lg{
+      margin-left: 50px !important;
+    }
+  }
+  
+}
+ 
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+  
+  
+}

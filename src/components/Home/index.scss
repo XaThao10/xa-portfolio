@@ -1,0 +1,130 @@
+
+
+h1{
+    color: #2cd4bf;
+    font-size: 53px;
+    margin: 0;
+    font-family: 'Marker Felt';
+    font-family:  400;
+
+    &::before{
+        content: '<h1>';
+        font-family: Trattatello;
+        color: #dbb957;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -40px;
+        left: 15px;
+        opacity: .4;
+    }
+
+    &::after{
+        content: '</h1>';
+        font-family: Trattatello;
+        color: #dbb957;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        animation: fadeIn 1s 1.7s backwards; 
+        opacity: .4;
+    }
+}
+
+.hero-text-animation{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 28px;
+    background: -webkit-linear-gradient( #2cd4bf, #dbb957, #2cd4bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 95%;
+  }
+
+  .hero-arrrow-icon{
+    font-size: 24px;
+    color: #dbb957;
+  }
+
+h2{
+    color: #D3d3d3;
+    font-family: monospace;
+    margin-top: 20px;
+    font-size: 28px !important;
+    font-weight: bold;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+}
+
+.flat-button{
+    color: #dbb957;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-family: monospace;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #dbb957;
+    float: left;
+    margin-top: 50px;
+    animation: fadeIn 1s 1.3s backwards !important;
+    white-space: nowrap;
+
+
+    &:hover{
+        background-color: #dbb957;
+        color: #0a0f1a;
+        text-decoration: none;
+    }
+
+}
+
+.hero-avatar{
+    border-radius: 50px;
+    margin-top: -50px;
+    justify-content: center;
+    animation: fadeIn 3s backwards;
+    animation-delay: 1.5s;
+
+    .avatar{
+        width: 80%;
+        border-radius: 450px;
+        border: 10px #2cd4bf solid;
+        float: right;
+    }
+}
+
+
+/* For Tablet View */
+@media screen and (min-device-width: 820px) and (max-device-width: 1180px){
+  .hero-avatar{
+    margin-top: 150px !important;
+
+    .avatar{
+        width: 100% !important;
+
+    }
+}
+
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+  .hero-avatar{
+    margin-top: 10px !important;
+    margin-left: -25px;
+
+    .avatar{
+       
+        width: 100% !important;
+
+    }
+}
+}
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+  
+  
+}
