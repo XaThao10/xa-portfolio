@@ -28,7 +28,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                <FontAwesomeIcon icon={faHome} /> Home
+                <FontAwesomeIcon icon={faHome} /> HOME
               </NavLink>
             </li>
             <li className="nav-item">
@@ -39,7 +39,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                 <FontAwesomeIcon icon={faUser} /> About
+                 <FontAwesomeIcon icon={faUser} /> ABOUT
               </NavLink>
             </li>
             <li className="nav-item">
@@ -50,7 +50,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                <FontAwesomeIcon icon={faLaptopCode} /> Work
+                <FontAwesomeIcon icon={faLaptopCode} /> WORK
               </NavLink>
             </li>
             <li className="nav-item">
@@ -61,7 +61,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-               <FontAwesomeIcon icon={faEnvelope} />  Contact Us
+               <FontAwesomeIcon icon={faEnvelope} />  CONTACT
               </NavLink>
             </li>
           </ul>
