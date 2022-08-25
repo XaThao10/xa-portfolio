@@ -3,9 +3,6 @@
   box-shadow: rgba(206, 206, 206, 0.15) 3.4px 4.4px 5.9px;
 }
 
-.card-img-top{
-
-}
 .card-body{
   border-top: 5px solid #2cd4bf;
   border-bottom: 8px solid #2cd4bf;
@@ -74,30 +71,3 @@
 }
 
 
-
-/* For Tablet View */
-@media screen and (min-device-width: 820px) and (max-device-width: 1180px){
-
-}
-
-
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
-
-
-  }
-   
-  /* For Mobile Portrait View */
-  @media screen and (max-device-width: 480px)
-  and (orientation: portrait) {
-  .grid{
-    margin-left: 40px !important;
-  }
-    
-  }
-   
-  /* For Mobile Landscape View */
-  @media screen and (max-device-width: 640px)
-  and (orientation: landscape) {
-
-    
-  }
