@@ -4,7 +4,7 @@ import { useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters';
 import heroAvatar from '../../assets/images/hero_Avatar.png';
 import Loader from 'react-loaders';
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaGithub, FaLinkedin, FaEnvelopeSquare } from "react-icons/fa";
 import Typical from "react-typical";
 
 const Home = () =>{
@@ -16,8 +16,15 @@ const Home = () =>{
         <>
         
         <div className='container'>
-          <div className='row'>
-              <div className='col-lg'>
+          <div className='row-1'>
+          <div className='col-lg' align="center">
+                    <div className='hero-avatar'>
+                        <img className='avatar' src={heroAvatar} alt="Xa" />
+                    </div>
+                </div>
+                </div>
+                <div className="row-1">
+              <div className='col-lg' align="center">
                     <h1>
                         <span className={letterClass}>H</span>
                         <span className={`${letterClass} _12`}>i,</span>
@@ -47,12 +54,17 @@ const Home = () =>{
                         2000
                     ]} />
                     </h2>
-                    <Link to="/contact" className='flat-button'>CONTACT ME</Link>
-                </div>
-                <div className='col-lg'>
-                    <div className='hero-avatar'>
-                        <img className='avatar' src={heroAvatar} alt="Xa" />
+                    <div className="social-icons-container">
+                   <a href='https://www.linkedin.com/in/thaoxa/' target={"_blank"}>     <FaLinkedin className='social-icon'/>
+                   </a>
+                   <a href='https://github.com/XaThao10/' target={"_blank"}> 
+                        <FaGithub className='social-icon'/>
+                   </a>
+                   <a href='mailto: xathao7@gmail.com' target={"_blank"}> 
+                   <FaEnvelopeSquare className='social-icon'/>
+                   </a>
                     </div>
+                    <Link to="/contact" className='flat-button'>CONTACT ME</Link>
                 </div>
             </div>
         </div>
