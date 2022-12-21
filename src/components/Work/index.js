@@ -13,6 +13,14 @@ const Work = () => {
     const projectText = ['P','r','o','j','e','c','t','s']
     const projectsInfo = [
         {
+            title: "React Movie App",
+            description: "This is a react movie app that I built. This started off as a travel app tutorial but I built off it and convert it to a movie app.",
+            cms: "Built with React",
+            theme: "This site is built using react, all images are there for development and practice use only.",
+            image: 'https://res.cloudinary.com/xathao-info/image/upload/v1671643596/Site%20images/movie-app_husa02.png',
+            url: "https://xa-react-movie-app.netlify.app/",
+        },
+        {
             title: "Adams Developement",
             description: "I worked with my team to come up with the design, and helped build the site from beginning to end.",
             cms: "CMS: WordPress",
@@ -56,7 +64,7 @@ const Work = () => {
         {
             title: "Peoria Law Firm",
             description: "A law firm site with a lot of content. I helpe design the site with my team from beginning to end while working with the client.",
-            cms: "CMS: WordPress",
+            cms: "None",
             theme: "Theme: Divi",
             image: 'https://res.cloudinary.com/xathao-info/image/upload/v1661271673/Site%20images/Peoria-Law-Frim_mlxlkw.jpg',
             url: "https://www.peorialawfirm.com/",
